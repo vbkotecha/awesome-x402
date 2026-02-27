@@ -310,6 +310,7 @@ Enable AI agents to make autonomous payments.
 - [Apollo Intelligence MCP Server](https://www.npmjs.com/package/@apollo_ai/mcp-proxy) - 26-tool MCP server covering intelligence feeds, crypto, OSINT, DeFi, proxy, and search. `npx @apollo_ai/mcp-proxy`. ([GitHub](https://github.com/bnmbnmai/mcp-proxy))
 - [Pylon MCP Server](https://www.npmjs.com/package/@pylonapi/mcp) - 20-tool MCP server for utility APIs: web extraction, search, translation, code execution, image generation, email, and more. `npx @pylonapi/mcp`. ([GitHub](https://github.com/pylon-apis/pylon-mcp))
 - [Scout MCP](https://scout.hugen.tokyo) - 10-tool MCP server for multi-source intelligence: HN, GitHub, npm, PyPI, Product Hunt, X/Twitter, x402 Bazaar search, and composite reports. $0.001–$0.25 USDC on Base. ([Source](https://github.com/bartonguestier1725-collab/scout-mcp))
+- [x402 Discovery MCP](https://github.com/rplryan/x402-discovery-mcp) ⭐ **Featured** — The missing discovery layer for x402. Enables AI agents to autonomously find, verify, and pay for x402 services. 5 MCP tools: `x402_discover`, `x402_browse`, `x402_health`, `x402_trust` (ERC-8004 verified), `x402_facilitator_check`. 16+ indexed services, Smithery score 100/100. Proven on-chain payment on Base mainnet. Docker image available. ([API](https://x402-discovery-api.onrender.com) | [npm](https://www.npmjs.com/package/@rplryan/x402-discovery-mcp) | [GitHub](https://github.com/rplryan/x402-discovery-mcp))
 
 ### Agent Frameworks
 
@@ -336,6 +337,11 @@ Development tools and utilities for x402.
 
 - [Foundry](https://getfoundry.sh/) - Smart contract development toolkit.
 
+### Discovery & Routing
+
+- [x402 Service Discovery API](https://x402-discovery-api.onrender.com) — Production REST API and MCP server: the missing discovery layer for x402. Find x402-compatible services, verify trust via ERC-8004, check facilitator compatibility, and get payment-readiness signals. 16 indexed services across 5 categories. Proven on-chain payment: [TX 0xb0ef774...](https://basescan.org/tx/0xb0ef774a7a26cdb370c305a625b2cf1bd6d7bb98f2ca16119d953bdcebc7e860) on Base mainnet. v3.1.0. ([GitHub](https://github.com/rplryan/x402-discovery-api))
+- [x402 RouteNet](https://x402-routenet.onrender.com) — Intelligent x402 payment routing with 4 strategies: cheapest, fastest, most-reliable, and load-balanced. Automatically selects the optimal facilitator for any service + network combination. v1.0.0. ([GitHub](https://github.com/rplryan/x402-routenet))
+
 ### Monitoring & Analytics
 
 - Dune Analytics - On-chain metrics and visualizations.
@@ -350,6 +356,10 @@ Tools and resources for testing x402 implementations.
 - [Base Sepolia USDC Faucet](https://faucet.circle.com/) - Get test USDC.
 - [Base Sepolia Bridge](https://bridge.base.org/) - Bridge test ETH.
 
+
+### Testing Tools & Harnesses
+
+- [x402 Payment Harness](https://github.com/rplryan/x402-payment-harness) *(Coming Soon)* — Standalone Python CLI and library for end-to-end x402 payment testing without CDP dependencies. Uses EOA wallets with local EIP-712 `TransferWithAuthorization` signing. Full flow: 402 challenge → EIP-712 sign → retry with X-PAYMENT header → on-chain settlement. Saves 4–8 hours per developer vs. debugging CDP wallet signing from scratch.
 
 ## 📚 Tutorials & Learning Resources
 
@@ -482,6 +492,8 @@ Projects building with or extending x402.
 - [MoonMaker API](https://api.moonmaker.cc) - AI-native crypto intelligence API. Real-time signals, market regime, institutional flows, DeFi yields & DEX alpha — pay per call via x402 USDC on Base. Built for AI agents.
 - [Bloomfilter](https://bloomfilter.xyz) - x402-powered domain registration API for AI agents. Register ICANN domains and manage DNS, paying with USDC on Base
 - [OpSpawn Bazaar](https://a2a.opspawn.com) - Suite of seven AI-powered x402 microservices including screenshot capture, sentiment analysis, summarization, translation, fact-checking, and entity extraction on Base network.
+
+- [x402 Discovery & RouteNet](https://x402-discovery-api.onrender.com) — Open infrastructure for the x402 agent economy. The Discovery API indexes 16+ services with quality signals, ERC-8004 trust verification, and facilitator compatibility checks. RouteNet adds intelligent routing across facilitators. Both production-live on Base mainnet with proven on-chain payment. MCP server (5 tools, Smithery 100/100). ([Discovery API GitHub](https://github.com/rplryan/x402-discovery-api) | [RouteNet GitHub](https://github.com/rplryan/x402-routenet) | [MCP Server](https://github.com/rplryan/x402-discovery-mcp))
 
 ### DeFi & Finance
 
