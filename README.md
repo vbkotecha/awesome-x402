@@ -470,6 +470,10 @@ Projects building with or extending x402.
 - Cloudflare x402 - Edge payment processing.
 - [thirdweb Nebula](https://thirdweb.com/nebula) - AI agent transaction framework.
 
+- [AgentCourt](https://github.com/vbkotecha/agentcourt-api) — Policy-driven dispute resolution API for agent commerce. The "Evaluator" layer for ERC-8183: submit evidence, apply policy rules, get deterministic rulings in under 500ms. 6 policy templates (freelance, milestone, bug bounty, SLA, API quality, physical commerce), 34 rules, ADRP-compatible. x402-ready at $0.05/dispute. Python + JS + TS SDKs, MCP server config, Postman collection. Live API with 50+ verdicts resolved.
+
+- [AgentCourt](https://agentcourt-api-production.up.railway.app) — Policy-driven dispute resolution API for agent commerce. 7 policy templates (freelance delivery, milestone payments, bug bounties, SLA, API quality, physical commerce, scope disputes), 39 deterministic rules, rulings in <30ms. $0.05 USDC per dispute on Base mainnet. Free tier: 100 disputes/month. x402 discovery: [/.well-known/x402](https://agentcourt-api-production.up.railway.app/.well-known/x402) | ([GitHub](https://github.com/vbkotecha/agentcourt-api)) | ([Landing](https://vbkotecha.github.io/agentcourt-api/))
+
 ### Tools & Services
 
 - [Pylon](https://pylonapi.com) — x402-payable utility API gateway for AI agents. 20 capabilities (web extraction, search, translation, code execution, image generation, and more) on Base mainnet. MCP server (`npx @pylonapi/mcp`), agent reputation network, and gateway orchestration. USDC on Base. ([GitHub](https://github.com/pylon-apis/pylon-mcp))
