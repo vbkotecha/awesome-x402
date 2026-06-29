@@ -132,7 +132,7 @@ Real companies using x402 in production with proven scale and transaction volume
 - [Coinbase Developer Platform](https://coinbase.com/developer-platform) - Official CDP implementation processing hundreds of thousands of transactions weekly with enterprise-grade reliability and 2-second settlement times.
 - [Cloudflare Workers](https://workers.cloudflare.com) - Edge computing platform with x402 integration serving global distributed payment verification at scale across 300+ data centers.
 
-- [AgentCourt](https://agentcourt.to) — B2B dispute resolution API for agent commerce. POST /dispute returns ruling + confidence + reasoning + remedy. 7 policy templates, 42 rules, 50 verdicts stored. $0.05 USDC per dispute on Base mainnet. <100ms avg latency (50-300x faster than LLM judge competitors). x402 v2 with Bazaar discovery. ([GitHub](https://github.com/vbkotecha/agentcourt-api) | [OpenAPI](https://agentcourt-api-production.up.railway.app/docs) | [Discovery](https://agentcourt-api-production.up.railway.app/.well-known/x402-listing))
+- [AgentCourt](https://agentcourt.to) — B2B dispute resolution API for agent commerce. POST /v1/disputes returns structured ruling with confidence score, legal reasoning, and remedy. 7 policy templates, 42 rules, 50 verdicts stored. $0.05 USDC per dispute on Base mainnet via x402. <100ms avg latency. ([GitHub](https://github.com/vbkotecha/agentcourt-api) | [OpenAPI](https://agentcourt-api-production.up.railway.app/docs) | [Health](https://agentcourt-api-production.up.railway.app/health))
 
 ### Production Success Metrics
 
